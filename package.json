@@ -1,0 +1,38 @@
+{
+  "name": "warhammer-vue-uikit",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Warhammer-themed Vue 3 UI component library",
+  "main": "./dist/warhammer-uikit.umd.js",
+  "module": "./dist/warhammer-uikit.es.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/warhammer-uikit.es.js",
+      "require": "./dist/warhammer-uikit.umd.js"
+    },
+    "./styles": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "vite": "^7.1.10",
+    "vue": "^3.5.22",
+    "@vitejs/plugin-vue": "^6.0.1"
+  },
+  "peerDependencies": {
+    "vue": ">=3"
+  },
+  "keywords": [
+    "vue3",
+    "ui-components",
+    "warhammer",
+    "ui-kit",
+    "frontend"
+  ]
+}
